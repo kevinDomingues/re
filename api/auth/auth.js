@@ -7,7 +7,7 @@ const verifyToken = (req, res, next) => {
     req.body.token || req.query.token || req.headers["x-access-token"];
 
   if (!token) {
-    return res.status(403).json("You don't have a token!");
+    return res.status(404);
   }
   try {
     const decoded = jwt.verify(token, config.TOKEN_KEY);
