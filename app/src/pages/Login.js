@@ -30,7 +30,7 @@ function Login() {
           }
           
           const response = await fetch(
-            `http://localhost:5000/user/login`, requestOptions
+            `http://172.105.73.209:5000/user/login`, requestOptions
             );
 
           if(response.status === 200){

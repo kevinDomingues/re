@@ -70,7 +70,7 @@ function SignUp() {
       }
   
     let response = await fetch(
-      `http://localhost:5000/user/signUp`, requestOptions
+      `http://172.105.73.209:5000/user/signUp`, requestOptions
       );
     
     let json = await response.json();
